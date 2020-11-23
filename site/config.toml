@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "harbor"
+
+[params.logo]
+  url = "logo.svg" # static/images/icon.png
+  width = 140
+  height = 60
+  alt = "Logo"
