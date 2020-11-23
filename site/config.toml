@@ -4,7 +4,7 @@ title = "My New Hugo Site"
 theme = "harbor"
 
 [params.logo]
-  url = "logo.svg" # static/images/icon.png
+  url = "logo.png" # static/images/
   width = 140
   height = 60
   alt = "Logo"
