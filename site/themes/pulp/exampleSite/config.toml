@@ -1,17 +1,25 @@
-baseURL = "http://mitflit.ro/"
-languageCode = "en-us"
-title = "mitflit - mine, not yours"
+baseurl = "https://example.com/"
+title = "Site Title"
 theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
 [params]
-    author = "Dumitru Ungureanu"
-    avatar = "avatar.png"
+    author = "Your Name"
+    avatar = "avatar.jpg"
     # avatarDescription = "My avatar description"
     favicon = "favicon.ico"
     description = """
-        These webpages are not here for you.
-        Please, do not read them.
+        Please write anything here.
+        Profiles, backgrounds, favorite things etc.
     """
-    publicationYear = "2020"
+    publicationYear = "2019"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
     # singlePageDateFormat = "January 2, 2006"
     # custom_css = ["/css/custom.css"]
@@ -30,15 +38,22 @@ theme = "pulp"
     weight = 10
 
 [[menu.main]]
+    identifier = "twitter"
+    # name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/username"
+    weight = 20
+
+[[menu.main]]
     identifier = "github"
     # name = "GitHub"
     pre = "<i class='fab fa-github fa-lg'></i>"
-    url = "https://github.com/itmitica"
+    url = "https://github.com/username"
     weight = 30
 
 [[menu.main]]
     identifier = "email"
     # name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
-    url = "mailto:itmitica@gmail.com"
+    url = "mailto:username@example.com"
     weight = 40
