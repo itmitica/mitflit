@@ -1,4 +1,4 @@
-baseURL = "http://mitflit.ro/"
+baseURL = "https://mitflit.ro/"
 languageCode = "en-us"
 title = "mitflit - mine, not yours"
 theme = "pulp"
