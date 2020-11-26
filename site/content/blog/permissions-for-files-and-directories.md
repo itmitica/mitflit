@@ -13,7 +13,7 @@ tags: [
 Troubleshoot checklist item #99: missing permissions on files or directories.
 <!--more-->
 
-## Study case
+## A suficiently trivial task
 
 Add a custom font for the current user in Debian: [Anonymous Font](https://www.fontspace.com/anonymous-font-f3245). Permissions for the font file are key, "otherwise it may not be usable".
 
