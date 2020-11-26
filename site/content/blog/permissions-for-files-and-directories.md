@@ -10,7 +10,7 @@ tags: [
 ]
 ---
 
-It could be the missing puzzle for my next troubleshoot: missing permissions on files or directories.
+Troubleshoot checklist item #99: missing permissions on files or directories.
 <!--more-->
 
 ## Study case
