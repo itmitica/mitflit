@@ -1,14 +1,23 @@
-baseURL = "https://mitflit.ro/"
+baseurl = "https://mitflit.ro/"
 languageCode = "en-us"
 title = "mitflit - mine, not yours"
 theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
 [params]
     author = "Dumitru Ungureanu"
     avatar = "avatar.png"
     # avatarDescription = "My avatar description"
-    favicon = "favicon.ico"
-    description = """
-        These webpages are not here for you.
+    # favicon = "favicon.ico"
+     description = """
+        The webpages here are not for you.
         Please, do not read them.
     """
     publicationYear = "2020"
