@@ -60,14 +60,14 @@ fc-list | grep "Anon"
 
 Navigate to the downloaded zip file. 
 
-Enter command mode and issue unzip commands for archive file list and deflate.
+Enter command mode and issue unzip commands for archive file list and for extracting the `ttf` files only, if any.
 
 ```sh
 :!!unzip -l %f
 :!unzip %f *.ttf  
 ```
 
-Check for `ttf` files permissions in the status bar.
+Navigate to the extracted files and check the file permissions displayed in the `vifm` status bar.
 
 Select the `ttf` files: `t` or enter the visual mode `v`.
 

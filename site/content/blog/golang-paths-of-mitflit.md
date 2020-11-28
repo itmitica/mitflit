@@ -39,16 +39,16 @@ The default `GOENV` file `env` is stored somewhere else in the user home directo
 
 ## Golang paths of mitflit
 
-Paths in symmetry with the environmental variables: `GOROOT` is `go/root`, `GOPATH` is `go/path`, `GOBIN` is `go/bin`. `GOCACHE` is `go/cache`, `GOENV` is `go/env`. Bonus points: modules in `go/modules`, `env` in `go/env`.
+Paths in symmetry with the environmental variables: `GOROOT` is `go/root`, `GOPATH` is `go/path`, `GOBIN` is `go/bin`. `GOCACHE` is `go/cache`, `GOENV` is `go/env`. Bonus points: modules in `go/modules`.
 
 ```
 ├─ go
-│  ├─ bin      (GOBIN, where install command deploys binaries)
-│  ├─ build    (GOCACHE, where cached builds await reuse)
+│  ├─ bin       (GOBIN, where install command deploys binaries)
+│  ├─ cache     (GOCACHE, where cached builds await reuse)
 │  ├─ modules
-│  ├─ path     (GOPATH, first workspace, where downloaded packages are)
-│  └─ root     (GOROOT, golang installation goes here)
-│     env      (GOENV, the golang config file)
+│  ├─ path      (GOPATH, first workspace, where downloaded packages are)
+│  └─ root      (GOROOT, golang installation goes here)
+│     env       (GOENV, the golang config file)
 ```
 
 ### Prerequisites

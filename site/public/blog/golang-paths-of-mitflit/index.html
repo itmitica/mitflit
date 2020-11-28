@@ -37,7 +37,7 @@
 <meta itemprop="description" content="Where I change the default paths in golang to a centralized location on disk.">
 <meta itemprop="datePublished" content="2020-11-26T17:45:42+02:00" />
 <meta itemprop="dateModified" content="2020-11-26T17:45:42+02:00" />
-<meta itemprop="wordCount" content="543">
+<meta itemprop="wordCount" content="540">
 
 
 
@@ -157,14 +157,14 @@
 <p>The default <code>GOCAHE</code> is in a <code>build</code> directory somewhere in the user home directory.</p>
 <p>The default <code>GOENV</code> file <code>env</code> is stored somewhere else in the user home directory.</p>
 <h2 id="golang-paths-of-mitflit">Golang paths of mitflit</h2>
-<p>Paths in symmetry with the environmental variables: <code>GOROOT</code> is <code>go/root</code>, <code>GOPATH</code> is <code>go/path</code>, <code>GOBIN</code> is <code>go/bin</code>. <code>GOCACHE</code> is <code>go/cache</code>, <code>GOENV</code> is <code>go/env</code>. Bonus points: modules in <code>go/modules</code>, <code>env</code> in <code>go/env</code>.</p>
+<p>Paths in symmetry with the environmental variables: <code>GOROOT</code> is <code>go/root</code>, <code>GOPATH</code> is <code>go/path</code>, <code>GOBIN</code> is <code>go/bin</code>. <code>GOCACHE</code> is <code>go/cache</code>, <code>GOENV</code> is <code>go/env</code>. Bonus points: modules in <code>go/modules</code>.</p>
 <pre><code>├─ go
-│  ├─ bin      (GOBIN, where install command deploys binaries)
-│  ├─ build    (GOCACHE, where cached builds await reuse)
+│  ├─ bin       (GOBIN, where install command deploys binaries)
+│  ├─ cache     (GOCACHE, where cached builds await reuse)
 │  ├─ modules
-│  ├─ path     (GOPATH, first workspace, where downloaded packages are)
-│  └─ root     (GOROOT, golang installation goes here)
-│     env      (GOENV, the golang config file)
+│  ├─ path      (GOPATH, first workspace, where downloaded packages are)
+│  └─ root      (GOROOT, golang installation goes here)
+│     env       (GOENV, the golang config file)
 </code></pre><h3 id="prerequisites">Prerequisites</h3>
 <p>Downloaded golang binary release archive, <code>tar.gz</code> for Debian or <code>zip</code> for Windows, is found in the <code>Downloads</code> directory in the user home directory.</p>
 <p>Previous golang installation or usage has been purged: target <code>go</code> directory has no tree structure pertaining to a default <code>GOROOT</code> or <code>GOPATH</code>.</p>
