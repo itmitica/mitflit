@@ -36,6 +36,11 @@ The default `GOCAHE` is in a `build` directory somewhere.
 
 The default `GOENV` file `env` is stored somewhere else.
 
+## Prerequisites
+
+Downloaded golang binary release archive, `tar.gz` for Debian or `zip` for Windows, is found in the `Downloads` directory in user home directory.
+
+Previous golang installation or use has been purged: target `go` directory has no tree structure pertaining to a default `GOROOT` or `GOPATH`.
 
 ## Golang paths of mitflit
 
