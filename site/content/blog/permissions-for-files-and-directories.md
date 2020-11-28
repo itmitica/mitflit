@@ -7,6 +7,7 @@ tags: [
     "permissions",
     "font",
     "Anonymous",
+    "vifm",
 ]
 ---
 
@@ -16,6 +17,10 @@ Troubleshoot checklist item #99: missing permissions on files or directories.
 ## A suficiently trivial task
 
 Add a custom font for the current user in Debian: [Anonymous Font](https://www.fontspace.com/anonymous-font-f3245). Permissions for the font file are key, "otherwise it may not be usable".
+
+## Prerequisites
+
+Downloaded zip archive for the Anonymous Font is found in the `Downloads` directory in the user home directory.
 
 ## Use the command prompt
 

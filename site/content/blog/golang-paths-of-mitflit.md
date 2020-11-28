@@ -1,9 +1,10 @@
 ---
 title: "Golang Paths of Mitflit"
 date: 2020-11-26T17:45:42+02:00
-draft: true
+draft: false
 tags: [
     "golang",
+    "shellvars",
     "envvars",
     "paths",
     "GOBIN",
@@ -17,7 +18,7 @@ tags: [
 ]
 ---
 
-Paths in symmetry with the environmental variables: `GOROOT` is `go/root`, `GOPATH` is `go/path`, `GOBIN` is `go/bin`. `GOCACHE` is `go/cache`, `GOENV` is `go/env`. Bonus points: modules in `go/modules`, `env` in `go/env`.
+Where I change the default paths in golang to a centralized location on disk.
 <!--more-->
 
 ## Golang paths of default
@@ -32,19 +33,13 @@ The default `GOPATH` is `go` on the user home directory. I am not to use the def
 
 The default `GOBIN` is `GOPATH/bin`. If `GOBIN` is set, then I should add that to path manually.
 
-The default `GOCAHE` is in a `build` directory somewhere.
+The default `GOCAHE` is in a `build` directory somewhere in the user home directory.
 
-The default `GOENV` file `env` is stored somewhere else.
-
-## Prerequisites
-
-Downloaded golang binary release archive, `tar.gz` for Debian or `zip` for Windows, is found in the `Downloads` directory in user home directory.
-
-Previous golang installation or use has been purged: target `go` directory has no tree structure pertaining to a default `GOROOT` or `GOPATH`.
+The default `GOENV` file `env` is stored somewhere else in the user home directory.
 
 ## Golang paths of mitflit
 
-Set the envvars for paths manually. Use the same tree structure on all platforms.
+Paths in symmetry with the environmental variables: `GOROOT` is `go/root`, `GOPATH` is `go/path`, `GOBIN` is `go/bin`. `GOCACHE` is `go/cache`, `GOENV` is `go/env`. Bonus points: modules in `go/modules`, `env` in `go/env`.
 
 ```
 ├─ go
@@ -55,6 +50,12 @@ Set the envvars for paths manually. Use the same tree structure on all platforms
 │  └─ root     (GOROOT, golang installation goes here)
 │     env      (GOENV, the golang config file)
 ```
+
+### Prerequisites
+
+Downloaded golang binary release archive, `tar.gz` for Debian or `zip` for Windows, is found in the `Downloads` directory in the user home directory.
+
+Previous golang installation or usage has been purged: target `go` directory has no tree structure pertaining to a default `GOROOT` or `GOPATH`.
 
 ### Debian
 ```sh
@@ -78,37 +79,23 @@ tar -C ~/go -xzf ~/Downloads/go*.tar.gz
 # Rename the extracted top folder.
 mv -T ~/go/go ~/go/root
 
-# Temporarly set the shellvars for paths, for the current process.
+# Temporarly set the shellvars, for the current process.
 GOENV=~/go/env
-GOBIN=~/go/bin
-GOCACHE=~/go/cache
-GOPATH=~/go/path
-GOROOT=~/go/root
 PATH=$PATH:$GOROOT/bin:$GOBIN
 
-# Temporarly set the envvars for paths, for the current process.
+# Temporarly set the envvars, for the current process.
 export GOENV
-export GOBIN
-export GOCACHE
-export GOPATH
-export GOROOT
 export PATH
 
-# Set the envvars for paths for future sessions.
-echo "export GOENV="$GOENV >>~/.profile
-echo "export GOBIN="$GOBIN >>~/.profile
-echo "export GOCACHE="$GOCACHE >>~/.profile
-echo "export GOPATH="$GOPATH >>~/.profile
-echo "export GOROOT="$GOROOT >>~/.profile
-echo "export PATH="$PATH >>~/.profile
+# Set the envvars for future sessions.
+echo "export GOENV=$GOENV" >>~/.profile
+echo "export PATH=$PATH" >>~/.profile
 
-# Set the envvars for paths in the env file as well.
-go env -w GOENV=$GOENV
-go env -w GOBIN=$GOBIN
-go env -w GOCACHE=$GOCACHE
-go env -w GOPATH=$GOPATH
-go env -w GOROOT=$GOROOT
-
+# Set the rest of the envvars in the env file.
+go env -w GOBIN=~/go/bin
+go env -w GOCACHE=~/go/cache
+go env -w GOPATH=~/go/path
+go env -w GOROOT=~/go/root
 ```
 
 ### Windows
@@ -132,32 +119,19 @@ REM Unzip the new version.
 REM Rename the extracted top folder.
 ren e:\projects\go\go root
 
-REM Temporarly set the envvars for paths, for the current session.
+REM Temporarly set the envvars for the current session.
 set GOENV=e:\projects\go\env
-set GOBIN=e:\projects\go\bin
-set GOCACHE=e:\projects\go\cache
-set GOPATH=e:\projects\go\path
-set GOROOT=e:\projects\go\root
-set PATH="%PATH%;%GOROOT%\bin"
 
-REM Set the envvars for paths for future sessions.
-setx GOENV e:\projects\go\env
-setx GOBIN e:\projects\go\bin
-setx GOCACHE e:\projects\go\cache
-setx GOPATH e:\projects\go\path
-setx GOROOT e:\projects\go\root
+REM Set the envvars for future sessions.
+setx GOENV $GOENV
 
-REM Set the envvars for paths in the env file as well.
+REM Set the rest of the envvars in the env file.
 %GOROOT%\bin\go env -w GOBIN=e:\projects\go\bin
 %GOROOT%\bin\go env -w GOCACHE=e:\projects\go\cache
 %GOROOT%\bin\go env -w GOPATH=e:\projects\go\path
 %GOROOT%\bin\go env -w GOROOT=e:\projects\go\root
-REM setx PATH "%PATH%;%GOROOT%\bin;%GOBIN%"
-REM The above command has the side effect
-REM of adding the System Paths to User Paths.
-REM Best way is to use the GUI in Control Panel/System
-REM to add GOROOT/bin and GOBIN to User Paths.
 ```
+
 ## Reading list
 
 [How To Read and Set Environmental and Shell Variable on Linux | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-linux)

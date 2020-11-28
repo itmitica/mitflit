@@ -6,7 +6,16 @@
     <description>Recent content on mitflit - mine, not yours</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2020 22:14:35 +0200</lastBuildDate><atom:link href="https://mitflit.ro/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 17:45:42 +0200</lastBuildDate><atom:link href="https://mitflit.ro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang Paths of Mitflit</title>
+      <link>https://mitflit.ro/blog/golang-paths-of-mitflit/</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/blog/golang-paths-of-mitflit/</guid>
+      <description>&lt;p&gt;Where I change the default paths in golang to a centralized location on disk.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Permissions for files and directories</title>
       <link>https://mitflit.ro/blog/permissions-for-files-and-directories/</link>

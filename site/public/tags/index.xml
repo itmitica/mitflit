@@ -6,22 +6,121 @@
     <description>Recent content in Tags on mitflit - mine, not yours</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2020 22:14:35 +0200</lastBuildDate><atom:link href="https://mitflit.ro/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 17:45:42 +0200</lastBuildDate><atom:link href="https://mitflit.ro/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>debian</title>
+      <link>https://mitflit.ro/tags/debian/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/debian/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>envvars</title>
+      <link>https://mitflit.ro/tags/envvars/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/envvars/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOBIN</title>
+      <link>https://mitflit.ro/tags/gobin/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/gobin/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOCACHE</title>
+      <link>https://mitflit.ro/tags/gocache/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/gocache/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOENV</title>
+      <link>https://mitflit.ro/tags/goenv/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/goenv/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://mitflit.ro/tags/golang/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/golang/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOPATH</title>
+      <link>https://mitflit.ro/tags/gopath/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/gopath/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOROOT</title>
+      <link>https://mitflit.ro/tags/goroot/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/goroot/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modules</title>
+      <link>https://mitflit.ro/tags/modules/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/modules/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paths</title>
+      <link>https://mitflit.ro/tags/paths/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/paths/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shellvars</title>
+      <link>https://mitflit.ro/tags/shellvars/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/shellvars/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://mitflit.ro/tags/windows/index.json</link>
+      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/windows/index.json</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Anonymous</title>
       <link>https://mitflit.ro/tags/anonymous/index.json</link>
       <pubDate>Wed, 25 Nov 2020 22:14:35 +0200</pubDate>
       
       <guid>https://mitflit.ro/tags/anonymous/index.json</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>debian</title>
-      <link>https://mitflit.ro/tags/debian/index.json</link>
-      <pubDate>Wed, 25 Nov 2020 22:14:35 +0200</pubDate>
-      
-      <guid>https://mitflit.ro/tags/debian/index.json</guid>
       <description></description>
     </item>
     
@@ -40,6 +139,15 @@
       <pubDate>Wed, 25 Nov 2020 22:14:35 +0200</pubDate>
       
       <guid>https://mitflit.ro/tags/permissions/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vifm</title>
+      <link>https://mitflit.ro/tags/vifm/index.json</link>
+      <pubDate>Wed, 25 Nov 2020 22:14:35 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/vifm/index.json</guid>
       <description></description>
     </item>
     
