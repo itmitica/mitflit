@@ -73,7 +73,7 @@ mkdir ~/go/path
 # Delete the old golang version.
 rmdir ~/go/root
 
-# Unzip the new version.
+# Extract the new version.
 tar -C ~/go -xzf ~/Downloads/go*.tar.gz
 
 # Rename the extracted top folder.
@@ -113,7 +113,7 @@ mkdir e:\projects\go\path
 REM Delete the old golang version.
 rmdir e:\projects\go\root
 
-REM Unzip the new version.
+REM Extract the new version.
 "%ProgramFiles%\7-zip\7z.exe" x -oe:\projects\go "%USERPROFILE%\Downloads\go*.zip"
 
 REM Rename the extracted top folder.
