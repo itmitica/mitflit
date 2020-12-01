@@ -1,7 +1,7 @@
 ---
 title: "Miniguides - Vifm"
 date: 2020-12-01T12:49:52+02:00
-draft: true
+draft: false
 tags: [
     "vifm",
     "tabs",
