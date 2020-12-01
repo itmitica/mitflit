@@ -51,7 +51,7 @@ Ctrl-W s
 Ctrl-W v
 
 # Make size of two views equal.
-Ctrl-W 
+Ctrl-W =
 
 # Maximize current view by default.
 Ctrl-W | 
