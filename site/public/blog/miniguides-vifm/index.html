@@ -37,7 +37,7 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer in here.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="239">
+<meta itemprop="wordCount" content="275">
 
 
 
@@ -154,7 +154,18 @@ Ctrl-W <span style="color:#f92672">=</span>
 Ctrl-W | 
 Ctrl-W _ 
 </code></pre></div><h2 id="directories">Directories</h2>
-<h3 id="marks-and-chars">Marks and Chars</h3>
+<h3 id="history">History</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Go backwards through directory history of current view.</span>
+:histprev
+<span style="color:#75715e"># or default keybinding</span>
+Ctrl-O
+
+<span style="color:#75715e"># Go forward through directory history of current view.</span>
+:histnext
+
+<span style="color:#75715e"># Display a menu with list of visited directories.</span>
+:history
+</code></pre></div><h3 id="marks-and-chars">Marks and Chars</h3>
 <h4 id="default-keybingings">Default keybingings</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Go to a folder of interest</span>
 <span style="color:#75715e"># Select the top line, the two dots at the top.</span>

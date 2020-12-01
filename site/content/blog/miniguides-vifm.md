@@ -60,6 +60,21 @@ Ctrl-W _
 
 ## Directories
 
+### History
+
+```sh
+# Go backwards through directory history of current view.
+:histprev
+# or default keybinding
+Ctrl-O
+
+# Go forward through directory history of current view.
+:histnext
+
+# Display a menu with list of visited directories.
+:history
+```
+
 ### Marks and Chars
 
 #### Default keybingings
