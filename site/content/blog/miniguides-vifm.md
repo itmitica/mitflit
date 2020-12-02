@@ -60,6 +60,22 @@ Ctrl-W _
 
 ## Directories
 
+### Size
+
+```sh
+# Select directory
+# or
+# select top two dots, for all objects in directory,
+# and calculate size. 
+gA
+
+# Select directory
+# or
+# select top two dots, for all objects in directory,
+# and calculate size using using cached sizes
+ga
+```
+
 ### History
 
 ```sh
