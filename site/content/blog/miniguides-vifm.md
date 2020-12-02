@@ -78,7 +78,7 @@ P
 # Delete to Vifm trash.
 dd
 
-## Delete permanently.
+# Delete permanently.
 DD
 
 # Rename.
