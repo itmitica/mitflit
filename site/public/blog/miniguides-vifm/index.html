@@ -37,7 +37,7 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer in here.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="320">
+<meta itemprop="wordCount" content="362">
 
 
 
@@ -154,8 +154,35 @@ Ctrl-W <span style="color:#f92672">=</span>
 Ctrl-W | 
 Ctrl-W _ 
 </code></pre></div><h2 id="directories">Directories</h2>
-<h3 id="size">Size</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Select directory</span>
+<h3 id="operations">Operations</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># BASICS</span>
+<span style="color:#75715e"># ---------------------------------------------------------</span>
+<span style="color:#75715e"># Rename.</span>
+cw
+
+<span style="color:#75715e"># Rename w/o extension</span>
+cW
+
+<span style="color:#75715e"># Copy.</span>
+yy
+<span style="color:#75715e"># or</span>
+Y
+
+<span style="color:#75715e"># Paste.</span>
+p
+
+<span style="color:#75715e"># Move.</span>
+P
+
+<span style="color:#75715e"># Delete to Vifm trash.</span>
+dd
+
+<span style="color:#75715e">## Delete permanently.</span>
+DD
+</code></pre></div><h3 id="meta">Meta</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># SIZE</span>
+<span style="color:#75715e"># ---------------------------------------------------------</span>
+<span style="color:#75715e"># Select directory</span>
 <span style="color:#75715e"># or</span>
 <span style="color:#75715e"># select top two dots, for all objects in directory,</span>
 <span style="color:#75715e"># and calculate size. </span>
@@ -166,8 +193,10 @@ gA
 <span style="color:#75715e"># select top two dots, for all objects in directory,</span>
 <span style="color:#75715e"># and calculate size using using cached sizes</span>
 ga
-</code></pre></div><h3 id="history">History</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Go backwards through directory history of current view.</span>
+
+<span style="color:#75715e"># HYSTORY</span>
+<span style="color:#75715e"># ---------------------------------------------------------</span>
+<span style="color:#75715e"># Go backwards through directory history of current view.</span>
 :histprev
 <span style="color:#75715e"># or default keybinding</span>
 Ctrl-O
@@ -177,9 +206,10 @@ Ctrl-O
 
 <span style="color:#75715e"># Display a menu with list of visited directories.</span>
 :history
-</code></pre></div><h3 id="marks-and-chars">Marks and Chars</h3>
-<h4 id="default-keybingings">Default keybingings</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Go to a folder of interest</span>
+
+<span style="color:#75715e">### MARKS AND CHARS</span>
+<span style="color:#75715e"># ---------------------------------------------------------</span>
+<span style="color:#75715e"># Go to a folder of interest</span>
 <span style="color:#75715e"># Select the top line, the two dots at the top.</span>
 <span style="color:#75715e"># Press &#39;m&#39; and then a char.</span>
 <span style="color:#75715e"># Example: mark &#39;~/Downloads&#39; for &#39;d&#39;.</span>
@@ -188,21 +218,22 @@ md
 <span style="color:#75715e"># To quickly navigate to a mark,</span>
 <span style="color:#75715e"># press apostrophe and then a char.</span>
 <span style="color:#75715e"># Example: jump to previsouly marked &#39;~/Downloads&#39;.</span>
-<span style="color:#960050;background-color:#1e0010">&#39;</span>d
-</code></pre></div><h4 id="default-commands">Default commands</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Example: display menu of all marks.</span>
-:marks
-
-<span style="color:#75715e"># Example: display menu of filtered marks.</span>
-:marks d
-</code></pre></div><h3 id="marks-and-tags">Marks and Tags</h3>
-<h4 id="default-commands-1">Default commands</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Mark the pwd with tags using the bmark command.</span>
-<span style="color:#75715e"># Example: mark &#39;~/go&#39; with &#39;go&#39; and &#39;golang&#39; tags. </span>
-:bmark go golang
-
-<span style="color:#75715e"># Mark and tag from everywhere using the &#39;bmark!&#39; command.</span>
-<span style="color:#75715e"># Example: mark &#39;~/go&#39; with &#39;go&#39; and &#39;golang&#39; tags.</span>
+<span style="color:#e6db74">&#39;d
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"># Example: display menu of all marks.
+</span><span style="color:#e6db74">:marks
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"># Example: display menu of filtered marks.
+</span><span style="color:#e6db74">:marks d
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">### MARKS AND TAGS
+</span><span style="color:#e6db74"># ---------------------------------------------------------
+</span><span style="color:#e6db74"># Mark the pwd with tags using the bmark command.
+</span><span style="color:#e6db74"># Example: mark &#39;</span>~/go<span style="color:#e6db74">&#39; with &#39;</span>go<span style="color:#e6db74">&#39; and &#39;</span>golang<span style="color:#e6db74">&#39; tags. 
+</span><span style="color:#e6db74">:bmark go golang
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"># Mark and tag from everywhere using the &#39;</span>bmark!<span style="color:#e6db74">&#39; command.
+</span><span style="color:#e6db74"># Example: mark &#39;</span>~/go<span style="color:#e6db74">&#39; with &#39;</span>go<span style="color:#e6db74">&#39; and &#39;</span>golang<span style="color:#960050;background-color:#1e0010">&#39;</span> tags.
 :bmark! ~/go go golang
 
 <span style="color:#75715e"># Example: display menu of all bmarks.</span>

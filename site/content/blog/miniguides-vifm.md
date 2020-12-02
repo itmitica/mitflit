@@ -60,9 +60,40 @@ Ctrl-W _
 
 ## Directories
 
-### Size
+### Operations 
 
 ```sh
+# BASICS
+# ---------------------------------------------------------
+# Rename.
+cw
+
+# Rename w/o extension
+cW
+
+# Copy.
+yy
+# or
+Y
+
+# Paste.
+p
+
+# Move.
+P
+
+# Delete to Vifm trash.
+dd
+
+## Delete permanently.
+DD
+```
+
+### Meta
+
+```sh
+# SIZE
+# ---------------------------------------------------------
 # Select directory
 # or
 # select top two dots, for all objects in directory,
@@ -74,11 +105,9 @@ gA
 # select top two dots, for all objects in directory,
 # and calculate size using using cached sizes
 ga
-```
 
-### History
-
-```sh
+# HYSTORY
+# ---------------------------------------------------------
 # Go backwards through directory history of current view.
 :histprev
 # or default keybinding
@@ -89,13 +118,9 @@ Ctrl-O
 
 # Display a menu with list of visited directories.
 :history
-```
 
-### Marks and Chars
-
-#### Default keybingings
-
-```sh
+### MARKS AND CHARS
+# ---------------------------------------------------------
 # Go to a folder of interest
 # Select the top line, the two dots at the top.
 # Press 'm' and then a char.
@@ -106,24 +131,15 @@ md
 # press apostrophe and then a char.
 # Example: jump to previsouly marked '~/Downloads'.
 'd
-```
 
-#### Default commands
-
-```sh
 # Example: display menu of all marks.
 :marks
 
 # Example: display menu of filtered marks.
 :marks d
-```
 
-
-### Marks and Tags
-
-#### Default commands
-
-```sh
+### MARKS AND TAGS
+# ---------------------------------------------------------
 # Mark the pwd with tags using the bmark command.
 # Example: mark '~/go' with 'go' and 'golang' tags. 
 :bmark go golang
