@@ -17,7 +17,7 @@ tags: [
 
 ## Tabs
 
-```sh
+```mason
 # Create new tab.
 :tabnew
 
@@ -43,7 +43,7 @@ gT
 
 ## Panes
 
-```sh
+```mason
 # Split window horizontally.
 Ctrl-W s
 
@@ -62,15 +62,8 @@ Ctrl-W _
 
 ### Operations 
 
-```sh
-# BASICS
-# ---------------------------------------------------------
-# Rename.
-cw
-
-# Rename w/o extension
-cW
-
+#### Basic
+```mason
 # Copy.
 yy
 # or
@@ -87,13 +80,18 @@ dd
 
 ## Delete permanently.
 DD
+
+# Rename.
+cw
+
+# Rename w/o extension
+cW
 ```
 
 ### Meta
 
-```sh
-# SIZE
-# ---------------------------------------------------------
+#### Size
+```mason
 # Select directory
 # or
 # select top two dots, for all objects in directory,
@@ -105,9 +103,10 @@ gA
 # select top two dots, for all objects in directory,
 # and calculate size using using cached sizes
 ga
+```
 
-# HYSTORY
-# ---------------------------------------------------------
+#### History
+```mason
 # Go backwards through directory history of current view.
 :histprev
 # or default keybinding
@@ -118,9 +117,10 @@ Ctrl-O
 
 # Display a menu with list of visited directories.
 :history
+```
 
-### MARKS AND CHARS
-# ---------------------------------------------------------
+#### Marks and Chars
+```mason
 # Go to a folder of interest
 # Select the top line, the two dots at the top.
 # Press 'm' and then a char.
@@ -137,9 +137,10 @@ md
 
 # Example: display menu of filtered marks.
 :marks d
+```
 
-### MARKS AND TAGS
-# ---------------------------------------------------------
+#### Marks and Tags
+```mason
 # Mark the pwd with tags using the bmark command.
 # Example: mark '~/go' with 'go' and 'golang' tags. 
 :bmark go golang
