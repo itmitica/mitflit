@@ -37,11 +37,11 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer in here.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="347">
+<meta itemprop="wordCount" content="568">
 
 
 
-<meta itemprop="keywords" content="vifm,tabs,panes,directories,marks,tags," />
+<meta itemprop="keywords" content="vifm,tabs,panes,directories,files,marks,tags," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://mitflit.ro//img/avatar.png"/>
 <meta name="twitter:title" content="Miniguides - Vifm"/>
@@ -104,6 +104,11 @@
       
         
         
+          <li><a href="https://mitflit.ro/tags/files/">files</a></li>
+        
+      
+        
+        
           <li><a href="https://mitflit.ro/tags/marks/">marks</a></li>
         
       
@@ -118,7 +123,16 @@
   
   <div id="contentBody">
     <p>&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer in here.</p>
-<h2 id="tabs">Tabs</h2>
+<h2 id="commands">Commands</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Run command.
+</span><span style="color:#75715e"></span>:![command]
+
+<span style="color:#75715e"># Run command and wait for keypress.
+</span><span style="color:#75715e"></span>:!![command]
+
+<span style="color:#75715e"># Open external editor to prompt for command-line command.
+</span><span style="color:#75715e"></span>q:
+</code></pre></div><h2 id="tabs">Tabs</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Create new tab.
 </span><span style="color:#75715e"></span>:tabnew
 
@@ -152,9 +166,33 @@
 
 <span style="color:#75715e"># Maximize current view by default.
 </span><span style="color:#75715e"></span>Ctrl-W | 
-Ctrl-W _ 
-</code></pre></div><h2 id="directories">Directories</h2>
-<h3 id="operations">Operations</h3>
+<span style="color:#75715e"># or
+</span><span style="color:#75715e"></span>Ctrl-W _ 
+
+<span style="color:#75715e"># Leave only one pane.
+</span><span style="color:#75715e"></span>Ctrl-W o
+
+<span style="color:#75715e"># Scroll down half page.
+</span><span style="color:#75715e"></span>Ctrl-D
+
+<span style="color:#75715e"># Scroll up half page.
+</span><span style="color:#75715e"></span>Ctrl-U
+</code></pre></div><h2 id="directories-and-files">Directories and Files</h2>
+<h3 id="select">Select</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Select in normal mode.
+</span><span style="color:#75715e"></span>t
+
+<span style="color:#75715e"># Enter visual select mode, clear current selection.
+</span><span style="color:#75715e"></span>v
+<span style="color:#75715e">#or
+</span><span style="color:#75715e"></span>V
+
+<span style="color:#75715e"># Save selection and go back to normal mode not moving cursor.
+</span><span style="color:#75715e"></span>Enter
+
+<span style="color:#75715e"># Enter amending visual mode. Preserves current selections.
+</span><span style="color:#75715e"></span>av
+</code></pre></div><h3 id="operations">Operations</h3>
 <h4 id="basic">Basic</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Copy.
 </span><span style="color:#75715e"></span>yy
@@ -176,35 +214,32 @@ Ctrl-W _
 <span style="color:#75715e"># Rename.
 </span><span style="color:#75715e"></span>cw
 
-<span style="color:#75715e"># Rename w/o extension
+<span style="color:#75715e"># Rename w/o extension.
 </span><span style="color:#75715e"></span>cW
+</code></pre></div><h4 id="other">Other.</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Change attributes.
+</span><span style="color:#75715e"></span>cp
+
+<span style="color:#75715e"># Clone.
+</span><span style="color:#75715e"></span>C
 </code></pre></div><h3 id="meta">Meta</h3>
-<h4 id="size">Size</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Select directory
+<h4 id="info">Info</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason">Ctrl-G
+</code></pre></div><h4 id="size">Size</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Select directory or file
 </span><span style="color:#75715e"># or
 </span><span style="color:#75715e"># select top two dots, for all objects in directory,
 </span><span style="color:#75715e"># and calculate size. 
 </span><span style="color:#75715e"></span>gA
 
-<span style="color:#75715e"># Select directory
+<span style="color:#75715e"># Select directory or file
 </span><span style="color:#75715e"># or
 </span><span style="color:#75715e"># select top two dots, for all objects in directory,
 </span><span style="color:#75715e"># and calculate size using using cached sizes
 </span><span style="color:#75715e"></span>ga
-</code></pre></div><h4 id="history">History</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Go backwards through directory history of current view.
-</span><span style="color:#75715e"></span>:histprev
-<span style="color:#75715e"># or default keybinding
-</span><span style="color:#75715e"></span>Ctrl-O
-
-<span style="color:#75715e"># Go forward through directory history of current view.
-</span><span style="color:#75715e"></span>:histnext
-
-<span style="color:#75715e"># Display a menu with list of visited directories.
-</span><span style="color:#75715e"></span>:history
 </code></pre></div><h4 id="marks-and-chars">Marks and Chars</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Go to a folder of interest
-</span><span style="color:#75715e"># Select the top line, the two dots at the top.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Go to a directory or file of interest.
+</span><span style="color:#75715e"># If directory, select the top line, the two dots at the top.
 </span><span style="color:#75715e"># Press &#39;m&#39; and then a char.
 </span><span style="color:#75715e"># Example: mark &#39;~/Downloads&#39; for &#39;d&#39;.
 </span><span style="color:#75715e"></span>md
@@ -220,7 +255,7 @@ Ctrl-W _
 <span style="color:#75715e"># Example: display menu of filtered marks.
 </span><span style="color:#75715e"></span>:marks d
 </code></pre></div><h4 id="marks-and-tags">Marks and Tags</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Mark the pwd with tags using the bmark command.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Mark current dir or file with tags using the bmark command.
 </span><span style="color:#75715e"># Example: mark &#39;~/go&#39; with &#39;go&#39; and &#39;golang&#39; tags. 
 </span><span style="color:#75715e"></span>:bmark go golang
 
@@ -233,7 +268,64 @@ Ctrl-W _
 
 <span style="color:#75715e"># Example: display menu of filtered bmarks.
 </span><span style="color:#75715e"></span>:bmarks golang
-</code></pre></div><h2 id="reading-list">Reading list</h2>
+</code></pre></div><h3 id="search">Search</h3>
+<h4 id="regular-expressions">Regular expressions</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Forward search.
+</span><span style="color:#75715e"></span>/[regexp]
+
+<span style="color:#75715e"># Open external editor to prompt for forward search pattern.
+</span><span style="color:#75715e"></span>q/
+
+
+<span style="color:#75715e"># Backward search.
+</span><span style="color:#75715e"></span>?[regexp]
+
+<span style="color:#75715e"># Open external editor to prompt for backward search pattern.
+</span><span style="color:#75715e"></span>q?
+
+
+<span style="color:#75715e"># Press &#39;n&#39; for the next match, &#39;N&#39; for the previous match.
+</span></code></pre></div><h4 id="first-char">First char</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Forward search.
+</span><span style="color:#75715e"></span>f[char]
+
+<span style="color:#75715e"># Backward search.
+</span><span style="color:#75715e"></span>F[char]
+
+<span style="color:#75715e"># Press &#39;;&#39; for the next match, &#39;,&#39; for the previous match.
+</span></code></pre></div><h3 id="preview">Preview</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Exit with &#39;w&#39;.
+</span><span style="color:#75715e"></span>w
+
+<span style="color:#75715e"># Scroll with &#39;Ctrl-D&#39;/&#39;Ctrl-U&#39;. Exit with &#39;q&#39;.
+</span><span style="color:#75715e"></span>e
+</code></pre></div><h3 id="filter">Filter</h3>
+<h4 id="dot">dot</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Toggle visibility.
+</span><span style="color:#75715e"></span>za
+</code></pre></div><h4 id="other-1">Other</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Save and reset all filters.
+</span><span style="color:#75715e"></span>zR
+
+<span style="color:#75715e"># Open external editor to prompt for filter pattern.
+</span><span style="color:#75715e"></span>q=
+</code></pre></div><h2 id="directories">Directories</h2>
+<h3 id="history">History</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Go to last visited directory.
+</span><span style="color:#75715e"></span>:cd -
+
+<span style="color:#75715e"># Go backwards through directory history of current view.
+</span><span style="color:#75715e"></span>:histprev
+<span style="color:#75715e"># or default keybinding
+</span><span style="color:#75715e"></span>Ctrl-O
+
+<span style="color:#75715e"># Go forward through directory history of current view.
+</span><span style="color:#75715e"></span>:histnext
+
+<span style="color:#75715e"># Display a menu with list of visited directories.
+</span><span style="color:#75715e"></span>:history
+</code></pre></div><h2 id="files">Files</h2>
+<h2 id="reading-list">Reading list</h2>
 <p><a href="https://vifm.info/vimdoc.shtml">Vifm - Manual in Vimdoc format</a></p>
   </div>
   <footer>

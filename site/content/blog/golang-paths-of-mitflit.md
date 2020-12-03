@@ -104,32 +104,32 @@ As far as I know, it's not possible to append only to the User Paths in a simple
 
 ```batchfile
 REM Create golang folders.
-mkdir e:\projects\go
-mkdir e:\projects\go\bin
-mkdir e:\projects\go\cache
-mkdir e:\projects\go\modules
-mkdir e:\projects\go\path
+mkdir c:\go
+mkdir c:\go\bin
+mkdir c:\go\cache
+mkdir c:\go\modules
+mkdir c:\go\path
 
 REM Delete the old golang version.
-rmdir e:\projects\go\root
+rmdir c:\go\root
 
 REM Extract the new version.
-"%ProgramFiles%\7-zip\7z.exe" x -oe:\projects\go "%USERPROFILE%\Downloads\go*.zip"
+"%ProgramFiles%\7-zip\7z.exe" x -oc:\go "%USERPROFILE%\Downloads\go*.zip"
 
 REM Rename the extracted top folder.
-ren e:\projects\go\go root
+ren c:\go\go root
 
 REM Temporarly set the envvars for the current session.
-set GOENV=e:\projects\go\env
+set GOENV=c:\go\env
 
 REM Set the envvars for future sessions.
 setx GOENV $GOENV
 
 REM Set the rest of the envvars in the env file.
-%GOROOT%\bin\go env -w GOBIN=e:\projects\go\bin
-%GOROOT%\bin\go env -w GOCACHE=e:\projects\go\cache
-%GOROOT%\bin\go env -w GOPATH=e:\projects\go\path
-%GOROOT%\bin\go env -w GOROOT=e:\projects\go\root
+%GOROOT%\bin\go env -w GOBIN=c:\go\bin
+%GOROOT%\bin\go env -w GOCACHE=c:\go\cache
+%GOROOT%\bin\go env -w GOPATH=c:\go\path
+%GOROOT%\bin\go env -w GOROOT=c:\go\root
 ```
 
 ## Reading list

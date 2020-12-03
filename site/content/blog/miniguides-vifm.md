@@ -7,6 +7,7 @@ tags: [
     "tabs",
     "panes",
     "directories",
+    "files",
     "marks",
     "tags"
 ]
@@ -14,6 +15,19 @@ tags: [
 
 "How do I work with ... in Vifm?" questions should have an answer in here.
 <!--more-->
+
+## Commands
+
+```mason
+# Run command.
+:![command]
+
+# Run command and wait for keypress.
+:!![command]
+
+# Open external editor to prompt for command-line command.
+q:
+```
 
 ## Tabs
 
@@ -55,14 +69,43 @@ Ctrl-W =
 
 # Maximize current view by default.
 Ctrl-W | 
+# or
 Ctrl-W _ 
+
+# Leave only one pane.
+Ctrl-W o
+
+# Scroll down half page.
+Ctrl-D
+
+# Scroll up half page.
+Ctrl-U
 ```
 
-## Directories
+## Directories and Files
+
+### Select
+
+```mason
+# Select in normal mode.
+t
+
+# Enter visual select mode, clear current selection.
+v
+#or
+V
+
+# Save selection and go back to normal mode not moving cursor.
+Enter
+
+# Enter amending visual mode. Preserves current selections.
+av
+```
 
 ### Operations 
 
 #### Basic
+
 ```mason
 # Copy.
 yy
@@ -84,45 +127,49 @@ DD
 # Rename.
 cw
 
-# Rename w/o extension
+# Rename w/o extension.
 cW
+```
+
+#### Other.
+
+```mason
+# Change attributes.
+cp
+
+# Clone.
+C
 ```
 
 ### Meta
 
-#### Size
+#### Info
+
 ```mason
-# Select directory
+Ctrl-G
+```
+
+#### Size
+
+```mason
+# Select directory or file
 # or
 # select top two dots, for all objects in directory,
 # and calculate size. 
 gA
 
-# Select directory
+# Select directory or file
 # or
 # select top two dots, for all objects in directory,
 # and calculate size using using cached sizes
 ga
 ```
 
-#### History
-```mason
-# Go backwards through directory history of current view.
-:histprev
-# or default keybinding
-Ctrl-O
-
-# Go forward through directory history of current view.
-:histnext
-
-# Display a menu with list of visited directories.
-:history
-```
-
 #### Marks and Chars
+
 ```mason
-# Go to a folder of interest
-# Select the top line, the two dots at the top.
+# Go to a directory or file of interest.
+# If directory, select the top line, the two dots at the top.
 # Press 'm' and then a char.
 # Example: mark '~/Downloads' for 'd'.
 md
@@ -140,8 +187,9 @@ md
 ```
 
 #### Marks and Tags
+
 ```mason
-# Mark the pwd with tags using the bmark command.
+# Mark current dir or file with tags using the bmark command.
 # Example: mark '~/go' with 'go' and 'golang' tags. 
 :bmark go golang
 
@@ -155,6 +203,90 @@ md
 # Example: display menu of filtered bmarks.
 :bmarks golang
 ```
+
+### Search
+
+#### Regular expressions
+
+```mason
+# Forward search.
+/[regexp]
+
+# Open external editor to prompt for forward search pattern.
+q/
+
+
+# Backward search.
+?[regexp]
+
+# Open external editor to prompt for backward search pattern.
+q?
+
+
+# Press 'n' for the next match, 'N' for the previous match.
+```
+
+#### First char
+
+```mason
+# Forward search.
+f[char]
+
+# Backward search.
+F[char]
+
+# Press ';' for the next match, ',' for the previous match.
+```
+
+### Preview
+
+```mason
+# Exit with 'w'.
+w
+
+# Scroll with 'Ctrl-D'/'Ctrl-U'. Exit with 'q'.
+e
+```
+
+### Filter
+
+#### dot
+
+```mason
+# Toggle visibility.
+za
+```
+
+#### Other
+```mason
+# Save and reset all filters.
+zR
+
+# Open external editor to prompt for filter pattern.
+q=
+```
+
+## Directories
+
+### History
+
+```mason
+# Go to last visited directory.
+:cd -
+
+# Go backwards through directory history of current view.
+:histprev
+# or default keybinding
+Ctrl-O
+
+# Go forward through directory history of current view.
+:histnext
+
+# Display a menu with list of visited directories.
+:history
+```
+
+## Files
 
 ## Reading list
 

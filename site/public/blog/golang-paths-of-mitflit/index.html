@@ -209,32 +209,32 @@ go env -w GOROOT<span style="color:#f92672">=</span>~/go/root
 </code></pre></div><h3 id="windows">Windows</h3>
 <p>As far as I know, it&rsquo;s not possible to append only to the User Paths in a simple manner, using the command line. The next best thing is to simply use the <code>Control Panel/System</code> GUI to add <code>%GOROOT%\bin</code> and <code>%GOBIN%</code> to User Paths.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-batchfile" data-lang="batchfile"><span style="color:#75715e">REM Create golang folders.</span>
-<span style="color:#66d9ef">mkdir</span> e:\projects\go
-<span style="color:#66d9ef">mkdir</span> e:\projects\go\bin
-<span style="color:#66d9ef">mkdir</span> e:\projects\go\cache
-<span style="color:#66d9ef">mkdir</span> e:\projects\go\modules
-<span style="color:#66d9ef">mkdir</span> e:\projects\go\path
+<span style="color:#66d9ef">mkdir</span> c:\go
+<span style="color:#66d9ef">mkdir</span> c:\go\bin
+<span style="color:#66d9ef">mkdir</span> c:\go\cache
+<span style="color:#66d9ef">mkdir</span> c:\go\modules
+<span style="color:#66d9ef">mkdir</span> c:\go\path
 
 <span style="color:#75715e">REM Delete the old golang version.</span>
-<span style="color:#66d9ef">rmdir</span> e:\projects\go\root
+<span style="color:#66d9ef">rmdir</span> c:\go\root
 
 <span style="color:#75715e">REM Extract the new version.</span>
-<span style="color:#e6db74">&#34;</span>%ProgramFiles%<span style="color:#e6db74">\7-zip\7z.exe&#34;</span> x -oe:\projects\go <span style="color:#e6db74">&#34;</span>%USERPROFILE%<span style="color:#e6db74">\Downloads\go*.zip&#34;</span>
+<span style="color:#e6db74">&#34;</span>%ProgramFiles%<span style="color:#e6db74">\7-zip\7z.exe&#34;</span> x -oc:\go <span style="color:#e6db74">&#34;</span>%USERPROFILE%<span style="color:#e6db74">\Downloads\go*.zip&#34;</span>
 
 <span style="color:#75715e">REM Rename the extracted top folder.</span>
-<span style="color:#66d9ef">ren</span> e:\projects\go\go root
+<span style="color:#66d9ef">ren</span> c:\go\go root
 
 <span style="color:#75715e">REM Temporarly set the envvars for the current session.</span>
-<span style="color:#66d9ef">set</span> GOENV=e:\projects\go\env
+<span style="color:#66d9ef">set</span> GOENV=c:\go\env
 
 <span style="color:#75715e">REM Set the envvars for future sessions.</span>
 setx GOENV $GOENV
 
 <span style="color:#75715e">REM Set the rest of the envvars in the env file.</span>
-%GOROOT%\bin\go env -w GOBIN=e:\projects\go\bin
-%GOROOT%\bin\go env -w GOCACHE=e:\projects\go\cache
-%GOROOT%\bin\go env -w GOPATH=e:\projects\go\path
-%GOROOT%\bin\go env -w GOROOT=e:\projects\go\root
+%GOROOT%\bin\go env -w GOBIN=c:\go\bin
+%GOROOT%\bin\go env -w GOCACHE=c:\go\cache
+%GOROOT%\bin\go env -w GOPATH=c:\go\path
+%GOROOT%\bin\go env -w GOROOT=c:\go\root
 </code></pre></div><h2 id="reading-list">Reading list</h2>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-linux">How To Read and Set Environmental and Shell Variable on Linux | DigitalOcean</a></p>
   </div>
