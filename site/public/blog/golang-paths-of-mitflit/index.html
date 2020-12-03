@@ -37,7 +37,7 @@
 <meta itemprop="description" content="Where I change the default paths in golang to a centralized location on disk.">
 <meta itemprop="datePublished" content="2020-11-26T17:45:42+02:00" />
 <meta itemprop="dateModified" content="2020-11-26T17:45:42+02:00" />
-<meta itemprop="wordCount" content="540">
+<meta itemprop="wordCount" content="542">
 
 
 
@@ -226,15 +226,16 @@ go env -w GOROOT<span style="color:#f92672">=</span>~/go/root
 
 <span style="color:#75715e">REM Temporarly set the envvars for the current session.</span>
 <span style="color:#66d9ef">set</span> GOENV=c:\go\env
+<span style="color:#66d9ef">set</span> GOROOT=c:\go\root
 
 <span style="color:#75715e">REM Set the envvars for future sessions.</span>
-setx GOENV $GOENV
+setx GOENV %GOENV%
 
 <span style="color:#75715e">REM Set the rest of the envvars in the env file.</span>
 %GOROOT%\bin\go env -w GOBIN=c:\go\bin
 %GOROOT%\bin\go env -w GOCACHE=c:\go\cache
 %GOROOT%\bin\go env -w GOPATH=c:\go\path
-%GOROOT%\bin\go env -w GOROOT=c:\go\root
+%GOROOT%\bin\go env -w GOROOT=%GOROOT%
 </code></pre></div><h2 id="reading-list">Reading list</h2>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-linux">How To Read and Set Environmental and Shell Variable on Linux | DigitalOcean</a></p>
   </div>

@@ -121,15 +121,16 @@ ren c:\go\go root
 
 REM Temporarly set the envvars for the current session.
 set GOENV=c:\go\env
+set GOROOT=c:\go\root
 
 REM Set the envvars for future sessions.
-setx GOENV $GOENV
+setx GOENV %GOENV%
 
 REM Set the rest of the envvars in the env file.
 %GOROOT%\bin\go env -w GOBIN=c:\go\bin
 %GOROOT%\bin\go env -w GOCACHE=c:\go\cache
 %GOROOT%\bin\go env -w GOPATH=c:\go\path
-%GOROOT%\bin\go env -w GOROOT=c:\go\root
+%GOROOT%\bin\go env -w GOROOT=%GOROOT%
 ```
 
 ## Reading list
