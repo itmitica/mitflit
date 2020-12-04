@@ -144,15 +144,31 @@ cw
 cW
 ```
 
-#### Basic++
+#### Register-based mark and copy/move
 
 ```mason
-# Select directories or files in pwd with `t`, `v`, `av`.
-# Store them in a register: e.g. `a`.
-# Make another selection in pwd or in another directory.
-# Store them in the same register: e.g. `A`.
-# Paste or Move the collected files.
+# Select directories or files in pwd.
+`t`
+# or
+`v`
+#or
+`av`
 
+# Store selected items in a register: e.g. `a`.
+"ayy
+
+# Make another selection in pwd or in another directory.
+# Append them using the appropriate uppercase register: e.g. `A`.
+"A
+
+# Paste or Move the collected files.
+p
+# or
+P
+# or 
+"ap
+# or
+"Ap
 ```
 
 #### Other
