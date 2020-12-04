@@ -131,7 +131,7 @@ cw
 cW
 ```
 
-#### Other.
+#### Other
 
 ```mason
 # Change attributes.
@@ -250,7 +250,7 @@ e
 
 ### Filter
 
-#### dot
+#### dot directories and files
 
 ```mason
 # Toggle visibility.
