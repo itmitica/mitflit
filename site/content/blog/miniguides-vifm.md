@@ -148,12 +148,6 @@ cW
 
 ```mason
 # Select directories or files in pwd.
-`t`
-# or
-`v`
-#or
-`av`
-
 # Store selected items in a register: e.g. `a`.
 "ayy
 
