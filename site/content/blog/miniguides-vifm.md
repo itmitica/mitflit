@@ -13,7 +13,7 @@ tags: [
 ]
 ---
 
-"How do I work with ... in Vifm?" questions should have an answer in here.
+"How do I work with ... in Vifm?" questions should have an answer below.
 <!--more-->
 
 ## Commands
@@ -144,7 +144,7 @@ cw
 cW
 ```
 
-#### Register-based mark and copy/move
+#### Collect to register
 
 ```mason
 # Select directories or files in pwd.
@@ -161,7 +161,7 @@ cW
 # Append them using the appropriate uppercase register: e.g. `A`.
 "A
 
-# Paste or Move the collected files.
+# Paste or Move the collected directories and files.
 p
 # or
 P

@@ -37,7 +37,7 @@
 <meta itemprop="description" content="Where I change the default paths in golang to a centralized location on disk.">
 <meta itemprop="datePublished" content="2020-11-26T17:45:42+02:00" />
 <meta itemprop="dateModified" content="2020-11-26T17:45:42+02:00" />
-<meta itemprop="wordCount" content="542">
+<meta itemprop="wordCount" content="544">
 
 
 
@@ -207,7 +207,7 @@ go env -w GOCACHE<span style="color:#f92672">=</span>~/go/cache
 go env -w GOPATH<span style="color:#f92672">=</span>~/go/path
 go env -w GOROOT<span style="color:#f92672">=</span>~/go/root
 </code></pre></div><h3 id="windows">Windows</h3>
-<p>As far as I know, it&rsquo;s not possible to append only to the User Paths in a simple manner, using the command line. The next best thing is to simply use the <code>Control Panel/System</code> GUI to add <code>%GOROOT%\bin</code> and <code>%GOBIN%</code> to User Paths.</p>
+<p>As far as I know, it&rsquo;s not possible to append only to the User Paths in a simple manner, using the command line. The next best thing is to simply use the <code>Control Panel/System</code> GUI to add <code>%GOROOT%\bin</code> and <code>%GOBIN%</code> to User Paths. Do that.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-batchfile" data-lang="batchfile"><span style="color:#75715e">REM Create golang folders.</span>
 <span style="color:#66d9ef">mkdir</span> c:\go
 <span style="color:#66d9ef">mkdir</span> c:\go\bin

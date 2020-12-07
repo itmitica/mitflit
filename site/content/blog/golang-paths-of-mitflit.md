@@ -100,7 +100,7 @@ go env -w GOROOT=~/go/root
 
 ### Windows
 
-As far as I know, it's not possible to append only to the User Paths in a simple manner, using the command line. The next best thing is to simply use the `Control Panel/System` GUI to add `%GOROOT%\bin` and `%GOBIN%` to User Paths.
+As far as I know, it's not possible to append only to the User Paths in a simple manner, using the command line. The next best thing is to simply use the `Control Panel/System` GUI to add `%GOROOT%\bin` and `%GOBIN%` to User Paths. Do that.
 
 ```batchfile
 REM Create golang folders.
