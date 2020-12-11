@@ -37,7 +37,7 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer below.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="722">
+<meta itemprop="wordCount" content="764">
 
 
 
@@ -139,7 +139,34 @@
   <div id="contentBody">
     <p>&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer below.</p>
 <h2 id="recipies">Recipies</h2>
-<h3 id="copy-file-name-and-path-to-clipboard">Copy file name and path to clipboard</h3>
+<h3 id="multiselect">MultiSelect</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Select randomly in normal mode.
+</span><span style="color:#75715e"></span>t
+
+<span style="color:#75715e"># Enter amending visual mode, preserving the current selections.
+</span><span style="color:#75715e"># Add continuous selection.
+</span><span style="color:#75715e"></span>av
+
+<span style="color:#75715e"># Go back to normal mode (not moving cursor) and save selection.
+</span><span style="color:#75715e"></span>Enter
+</code></pre></div><h3 id="collect-directories-and-files-from-different-paths-to-a-register">Collect directories and files from different paths to a register</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Select directories or files in pwd.
+</span><span style="color:#75715e"># Store selected items in a register: e.g. `a`.
+</span><span style="color:#75715e"></span>&#34;ayy
+
+<span style="color:#75715e"># Make another selection in pwd or in another directory.
+</span><span style="color:#75715e"># Append them using the appropriate uppercase register: e.g. `A`.
+</span><span style="color:#75715e"></span>&#34;A
+
+<span style="color:#75715e"># Paste or Move the collected directories and files.
+</span><span style="color:#75715e"></span>p
+<span style="color:#75715e"># or
+</span><span style="color:#75715e"></span>P
+<span style="color:#75715e"># or 
+</span><span style="color:#75715e"></span>&#34;ap
+<span style="color:#75715e"># or
+</span><span style="color:#75715e"></span>&#34;Ap
+</code></pre></div><h3 id="copy-file-name-and-path-to-clipboard">Copy file name and path to clipboard</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Enter command mode.
 </span><span style="color:#75715e"></span>:
 
@@ -260,23 +287,6 @@
 
 <span style="color:#75715e"># Rename w/o extension.
 </span><span style="color:#75715e"></span>cW
-</code></pre></div><h4 id="collect-to-register">Collect to register</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Select directories or files in pwd.
-</span><span style="color:#75715e"># Store selected items in a register: e.g. `a`.
-</span><span style="color:#75715e"></span>&#34;ayy
-
-<span style="color:#75715e"># Make another selection in pwd or in another directory.
-</span><span style="color:#75715e"># Append them using the appropriate uppercase register: e.g. `A`.
-</span><span style="color:#75715e"></span>&#34;A
-
-<span style="color:#75715e"># Paste or Move the collected directories and files.
-</span><span style="color:#75715e"></span>p
-<span style="color:#75715e"># or
-</span><span style="color:#75715e"></span>P
-<span style="color:#75715e"># or 
-</span><span style="color:#75715e"></span>&#34;ap
-<span style="color:#75715e"># or
-</span><span style="color:#75715e"></span>&#34;Ap
 </code></pre></div><h4 id="other">Other</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Change attributes.
 </span><span style="color:#75715e"></span>cp

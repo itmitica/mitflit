@@ -21,6 +21,40 @@ tags: [
 
 ## Recipies
 
+### MultiSelect
+
+```mason
+# Select randomly in normal mode.
+t
+
+# Enter amending visual mode, preserving the current selections.
+# Add continuous selection.
+av
+
+# Go back to normal mode (not moving cursor) and save selection.
+Enter
+```
+### Collect directories and files from different paths to a register
+
+```mason
+# Select directories or files in pwd.
+# Store selected items in a register: e.g. `a`.
+"ayy
+
+# Make another selection in pwd or in another directory.
+# Append them using the appropriate uppercase register: e.g. `A`.
+"A
+
+# Paste or Move the collected directories and files.
+p
+# or
+P
+# or 
+"ap
+# or
+"Ap
+```
+
 ### Copy file name and path to clipboard
 
 ```mason
@@ -170,27 +204,6 @@ cw
 
 # Rename w/o extension.
 cW
-```
-
-#### Collect to register
-
-```mason
-# Select directories or files in pwd.
-# Store selected items in a register: e.g. `a`.
-"ayy
-
-# Make another selection in pwd or in another directory.
-# Append them using the appropriate uppercase register: e.g. `A`.
-"A
-
-# Paste or Move the collected directories and files.
-p
-# or
-P
-# or 
-"ap
-# or
-"Ap
 ```
 
 #### Other
