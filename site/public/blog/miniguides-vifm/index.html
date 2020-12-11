@@ -37,7 +37,7 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer below.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="649">
+<meta itemprop="wordCount" content="723">
 
 
 
@@ -123,7 +123,27 @@
   
   <div id="contentBody">
     <p>&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer below.</p>
-<h2 id="commands">Commands</h2>
+<h2 id="recipies">Recipies</h2>
+<h3 id="copy-file-name-and-path-to-clipboard">Copy file name and path to clipboard</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Enter command mode.
+</span><span style="color:#75715e"></span>:
+
+<span style="color:#75715e"># Insert value: path to the current directory of the active pane.
+</span><span style="color:#75715e"></span>Ctrl+X d
+
+<span style="color:#75715e"># Add path delimiter.
+</span><span style="color:#75715e"></span>/
+
+<span style="color:#75715e"># Insert value: name of the current file of the active pane.
+</span><span style="color:#75715e"></span>Ctrl+X c
+
+<span style="color:#75715e"># Edit command-line content in external editor: vim.
+</span><span style="color:#75715e"></span>Ctrl+G
+
+<span style="color:#75715e"># Vim commands: use of the &#34;+ special register.
+</span><span style="color:#75715e"># Copy the top line to system clipboard.
+</span><span style="color:#75715e"></span>Shift+&#34;++ yy
+</code></pre></div><h2 id="commands">Commands</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Run command.
 </span><span style="color:#75715e"></span>:![command]
 

@@ -16,6 +16,31 @@ tags: [
 "How do I work with ... in Vifm?" questions should have an answer below.
 <!--more-->
 
+## Recipies
+
+### Copy file name and path to clipboard
+
+```mason
+# Enter command mode.
+:
+
+# Insert value: path to the current directory of the active pane.
+Ctrl+X d
+
+# Add path delimiter.
+/
+
+# Insert value: name of the current file of the active pane.
+Ctrl+X c
+
+# Edit command-line content in external editor: vim.
+Ctrl+G
+
+# Vim commands: use of the "+ special register.
+# Copy the top line to system clipboard.
+Shift+"++ yy
+```
+
 ## Commands
 
 ```mason
