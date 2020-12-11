@@ -12,7 +12,8 @@ tags: [
     "tags",
     "path",
     "vim",
-    "clipboard"
+    "clipboard",
+    "multiselect"
 ]
 ---
 
