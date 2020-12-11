@@ -19,7 +19,7 @@ tags: [
 "How do I work with ... in Vifm?" questions should have an answer below.
 <!--more-->
 
-## Recipies
+## Recipes
 
 ### MultiSelect
 
