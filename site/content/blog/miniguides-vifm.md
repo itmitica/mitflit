@@ -9,7 +9,10 @@ tags: [
     "directories",
     "files",
     "marks",
-    "tags"
+    "tags",
+    "path",
+    "vim",
+    "clipboard"
 ]
 ---
 
@@ -344,8 +347,6 @@ Ctrl-O
 # Display a menu with list of visited directories.
 :history
 ```
-
-## Files
 
 ## Reading list
 
