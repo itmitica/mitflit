@@ -37,7 +37,7 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer below.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="764">
+<meta itemprop="wordCount" content="924">
 
 
 
@@ -172,24 +172,43 @@
 <span style="color:#75715e"># or
 </span><span style="color:#75715e"></span>&#34;Ap
 </code></pre></div><h3 id="copy-file-name-and-path-to-clipboard">Copy file name and path to clipboard</h3>
+<h4 id="using-macros">Using macros</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># `%c` is the file name macro.
+</span><span style="color:#75715e"># `:p` is the full path file name modifier.
+</span><span style="color:#75715e"># `%m` redirects command output to a menu.
+</span><span style="color:#75715e"></span>:!echo %c:p %m
+
+<span style="color:#75715e"># Insert menu option to command line.
+</span><span style="color:#75715e"></span>c
+
+<span style="color:#75715e"># Delete starting `!` prefix.
+</span><span style="color:#75715e"></span>Home, Del
+
+<span style="color:#75715e"># Edit command-line content in external editor: vim.
+</span><span style="color:#75715e"></span>Ctrl-G
+
+<span style="color:#75715e"># Vim commands: use of the `+` special register.
+</span><span style="color:#75715e"># Copy the top line to system clipboard.
+</span><span style="color:#75715e"></span>&#34;+yy
+</code></pre></div><h4 id="using-keys">Using keys</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Enter command mode.
 </span><span style="color:#75715e"></span>:
 
 <span style="color:#75715e"># Insert value: path to the current directory of the active pane.
-</span><span style="color:#75715e"></span>Ctrl+X d
+</span><span style="color:#75715e"></span>Ctrl-X d
 
 <span style="color:#75715e"># Add path delimiter.
 </span><span style="color:#75715e"></span>/
 
 <span style="color:#75715e"># Insert value: name of the current file of the active pane.
-</span><span style="color:#75715e"></span>Ctrl+X c
+</span><span style="color:#75715e"></span>Ctrl-X c
 
 <span style="color:#75715e"># Edit command-line content in external editor: vim.
-</span><span style="color:#75715e"></span>Ctrl+G
+</span><span style="color:#75715e"></span>Ctrl-G
 
-<span style="color:#75715e"># Vim commands: use of the &#34;+ special register.
+<span style="color:#75715e"># Vim commands: use of the `+` special register.
 </span><span style="color:#75715e"># Copy the top line to system clipboard.
-</span><span style="color:#75715e"></span>Shift+&#34;++ yy
+</span><span style="color:#75715e"></span>&#34;+yy
 </code></pre></div><h2 id="commands">Commands</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Run command.
 </span><span style="color:#75715e"></span>:![command]
@@ -199,6 +218,32 @@
 
 <span style="color:#75715e"># Open external editor to prompt for command-line command.
 </span><span style="color:#75715e"></span>q:
+
+<span style="color:#75715e"># You can give multiple commands in one line.
+</span><span style="color:#75715e"># &#39;|&#39; can be used to separate commands.
+</span><span style="color:#75715e"></span>:!!zip -sf %c | less
+
+<span style="color:#75715e"># Macro:
+</span><span style="color:#75715e"># show command output in a menu.
+</span><span style="color:#75715e"></span>:!ls %m
+
+<span style="color:#75715e"># Macro:
+</span><span style="color:#75715e"># show command output in a menu;
+</span><span style="color:#75715e"># exit with &#39;Esc&#39;.
+</span><span style="color:#75715e"></span>:!ls %m
+
+<span style="color:#75715e"># Macro:
+</span><span style="color:#75715e"># show command output in the status bar.
+</span><span style="color:#75715e"></span>:!ls %S
+
+<span style="color:#75715e"># Macro:
+</span><span style="color:#75715e"># redirect command output to quick view, which is activated if disabled;
+</span><span style="color:#75715e"># exit with &#39;w&#39;.
+</span><span style="color:#75715e"></span>:!ls %q
+
+<span style="color:#75715e"># Macro:
+</span><span style="color:#75715e"># ignore command output.
+</span><span style="color:#75715e"></span>:!ls %i
 </code></pre></div><h2 id="tabs">Tabs</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># Create new tab.
 </span><span style="color:#75715e"></span>:tabnew

@@ -58,25 +58,49 @@ P
 
 ### Copy file name and path to clipboard
 
+#### Using macros
+
+```mason
+# `%c` is the file name macro.
+# `:p` is the full path file name modifier.
+# `%m` redirects command output to a menu.
+:!echo %c:p %m
+
+# Insert menu option to command line.
+c
+
+# Delete starting `!` prefix.
+Home, Del
+
+# Edit command-line content in external editor: vim.
+Ctrl-G
+
+# Vim commands: use of the `+` special register.
+# Copy the top line to system clipboard.
+"+yy
+```
+
+#### Using keys
+
 ```mason
 # Enter command mode.
 :
 
 # Insert value: path to the current directory of the active pane.
-Ctrl+X d
+Ctrl-X d
 
 # Add path delimiter.
 /
 
 # Insert value: name of the current file of the active pane.
-Ctrl+X c
+Ctrl-X c
 
 # Edit command-line content in external editor: vim.
-Ctrl+G
+Ctrl-G
 
-# Vim commands: use of the "+ special register.
+# Vim commands: use of the `+` special register.
 # Copy the top line to system clipboard.
-Shift+"++ yy
+"+yy
 ```
 
 ## Commands
@@ -90,6 +114,32 @@ Shift+"++ yy
 
 # Open external editor to prompt for command-line command.
 q:
+
+# You can give multiple commands in one line.
+# '|' can be used to separate commands.
+:!!zip -sf %c | less
+
+# Macro:
+# show command output in a menu.
+:!ls %m
+
+# Macro:
+# show command output in a menu;
+# exit with 'Esc'.
+:!ls %m
+
+# Macro:
+# show command output in the status bar.
+:!ls %S
+
+# Macro:
+# redirect command output to quick view, which is activated if disabled;
+# exit with 'w'.
+:!ls %q
+
+# Macro:
+# ignore command output.
+:!ls %i
 ```
 
 ## Tabs
