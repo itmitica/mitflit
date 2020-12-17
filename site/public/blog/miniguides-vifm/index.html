@@ -37,7 +37,7 @@
 <meta itemprop="description" content="&ldquo;How do I work with &hellip; in Vifm?&rdquo; questions should have an answer below.">
 <meta itemprop="datePublished" content="2020-12-01T12:49:52+02:00" />
 <meta itemprop="dateModified" content="2020-12-01T12:49:52+02:00" />
-<meta itemprop="wordCount" content="913">
+<meta itemprop="wordCount" content="946">
 
 
 
@@ -172,7 +172,13 @@
 <span style="color:#75715e"># or
 </span><span style="color:#75715e"></span>&#34;Ap
 </code></pre></div><h3 id="copy-file-name-and-path-to-clipboard">Copy file name and path to clipboard</h3>
-<h4 id="using-macros">Using macros</h4>
+<h4 id="using-macros-and-vim-output-redirect">Using macros and vim output redirect</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason">:!echo %c:p | vim -
+
+<span style="color:#75715e"># Vim commands: use of the `+` special register.
+</span><span style="color:#75715e"># Copy the top line to system clipboard.
+</span><span style="color:#75715e"></span>&#34;+yy
+</code></pre></div><h4 id="using-macros-to-edit-command-history">Using macros to edit command history</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mason" data-lang="mason"><span style="color:#75715e"># `%c` is the file name macro.
 </span><span style="color:#75715e"># `:p` is the full path file name modifier.
 </span><span style="color:#75715e"># `%m` redirects command output to a menu.

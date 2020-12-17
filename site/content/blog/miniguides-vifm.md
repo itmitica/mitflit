@@ -58,7 +58,17 @@ P
 
 ### Copy file name and path to clipboard
 
-#### Using macros
+#### Using macros and vim output redirect
+
+```mason
+:!echo %c:p | vim -
+
+# Vim commands: use of the `+` special register.
+# Copy the top line to system clipboard.
+"+yy
+```
+
+#### Using macros to edit command history
 
 ```mason
 # `%c` is the file name macro.
