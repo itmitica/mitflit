@@ -120,10 +120,6 @@ q:
 :!!zip -sf %c | less
 
 # Macro:
-# show command output in a menu.
-:!ls %m
-
-# Macro:
 # show command output in a menu;
 # exit with 'Esc'.
 :!ls %m
