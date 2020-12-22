@@ -37,7 +37,7 @@
 <meta itemprop="description" content="Troubleshoot checklist item #99: missing permissions on files or directories.">
 <meta itemprop="datePublished" content="2020-11-25T22:14:35+02:00" />
 <meta itemprop="dateModified" content="2020-11-25T22:14:35+02:00" />
-<meta itemprop="wordCount" content="350">
+<meta itemprop="wordCount" content="354">
 
 
 
@@ -122,7 +122,8 @@
 unzip -l ~/Downloads/anonymous-font.zip
 
 <span style="color:#75715e"># Unzip the ttf file to ~/.fonts/.</span>
-unzip ~/Downloads/anonymous-font.zip *.ttf -d ~/.fonts/ 
+<span style="color:#75715e"># Escape the asterisk.</span>
+unzip ~/Downloads/anonymous-font.zip <span style="color:#ae81ff">\*</span>.ttf -d ~/.fonts/ 
 
 <span style="color:#75715e"># Check if the font is recognized. </span>
 fc-list | grep <span style="color:#e6db74">&#34;Anon&#34;</span>
@@ -150,8 +151,8 @@ fc-list | grep <span style="color:#e6db74">&#34;Anon&#34;</span>
 </code></pre></div><h2 id="use-vifm">Use vifm</h2>
 <p>Navigate to the downloaded zip file.</p>
 <p>Enter command mode and issue unzip commands for archive file list and for extracting the <code>ttf</code> files only, if any.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">:!!unzip -l %f
-:!unzip %f *.ttf  
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">:!!unzip -l %c
+:!unzip %c <span style="color:#ae81ff">\*</span>.ttf  
 </code></pre></div><p>Navigate to the extracted files and check the file permissions displayed in the <code>vifm</code> status bar.</p>
 <p>Select the <code>ttf</code> files: <code>t</code> or enter the visual mode <code>v</code>.</p>
 <p><code>cp</code> for file properties dialog.</p>

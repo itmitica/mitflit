@@ -29,7 +29,8 @@ Downloaded zip archive for the Anonymous Font is found in the `Downloads` direct
 unzip -l ~/Downloads/anonymous-font.zip
 
 # Unzip the ttf file to ~/.fonts/.
-unzip ~/Downloads/anonymous-font.zip *.ttf -d ~/.fonts/ 
+# Escape the asterisk.
+unzip ~/Downloads/anonymous-font.zip \*.ttf -d ~/.fonts/ 
 
 # Check if the font is recognized. 
 fc-list | grep "Anon"
@@ -63,8 +64,8 @@ Navigate to the downloaded zip file.
 Enter command mode and issue unzip commands for archive file list and for extracting the `ttf` files only, if any.
 
 ```sh
-:!!unzip -l %f
-:!unzip %f *.ttf  
+:!!unzip -l %c
+:!unzip %c \*.ttf  
 ```
 
 Navigate to the extracted files and check the file permissions displayed in the `vifm` status bar.
