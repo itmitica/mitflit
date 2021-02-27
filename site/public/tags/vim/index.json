@@ -1,5 +1,14 @@
 [
     {
+        "ref": "https://mitflit.ro/blog/miniguides-vim/",
+        "title": "Miniguides - Vim",
+        "section": "blog",
+        "tags": ["vim","horizontal","scroll","nowrap"],
+        "date" : "2021.02.26",
+        "body": "\u0026ldquo;How do I work with \u0026hellip; in Vim?\u0026rdquo; questions should have an answer below.\nRecipes Scroll horizontally # Add nowrap settings to $MYVIMRC set formatoptions-=t set textwidth=0 set wrapmargin=0 # Scroll half screenwidth to the right zL # Scroll half screenwidth to the left zH Reading list Vim help files\n"
+    }
+,
+    {
         "ref": "https://mitflit.ro/blog/miniguides-vifm/",
         "title": "Miniguides - Vifm",
         "section": "blog",

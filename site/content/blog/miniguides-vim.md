@@ -1,9 +1,9 @@
 ---
-title: "Miniguides Vim"
+title: "Miniguides - Vim"
 date: 2021-02-26T21:02:53+02:00
 draft: false
 tags: [
-    "vif",
+    "vim",
     "horizontal",
     "scroll",
     "nowrap"
@@ -32,5 +32,5 @@ zH
 
 ## Reading list
 
-[Vifm - Manual in Vimdoc format](https://vifm.info/vimdoc.shtml)
+[Vim help files](https://vimhelp.org/)
 
