@@ -1,6 +1,6 @@
 baseurl = "https://mitflit.ro/"
 languageCode = "en-us"
-title = "mitflit - fetching"
+title = "mitflit - Go fetch!"
 theme = "pulp"
 canonifyurls = true
 hasCJKLanguage = true
