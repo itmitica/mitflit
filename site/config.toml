@@ -1,6 +1,6 @@
 baseurl = "https://mitflit.ro/"
 languageCode = "en-us"
-title = "mitflit - mine, not yours"
+title = "mitflit - fetching"
 theme = "pulp"
 canonifyurls = true
 hasCJKLanguage = true
@@ -17,8 +17,8 @@ hasCJKLanguage = true
     # avatarDescription = "My avatar description"
     # favicon = "favicon.ico"
      description = """
-        The webpages here are not for you.
-        Please, do not read them.
+        The topics in this blog are not "one-and-done".
+        The purpose of almost every webpage here is that of a living documentation.
     """
     publicationYear = "2020"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/

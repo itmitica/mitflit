@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mitflit - mine, not yours</title>
+    <title>mitflit - fetching</title>
     <link>https://mitflit.ro/</link>
-    <description>Recent content on mitflit - mine, not yours</description>
+    <description>Recent content on mitflit - fetching</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Feb 2021 21:02:53 +0200</lastBuildDate><atom:link href="https://mitflit.ro/index.xml" rel="self" type="application/rss+xml" />
