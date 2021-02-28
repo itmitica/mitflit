@@ -49,5 +49,6 @@ cd ..
 ## Reading list
 
 [Debian Wiki - List installed packages](https://wiki.debian.org/AptCLI#List_installed_packages)
+
 [Hugo - Quick Start](https://gohugo.io/getting-started/quick-start/)
 

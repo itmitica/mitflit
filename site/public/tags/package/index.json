@@ -5,6 +5,6 @@
         "section": "blog",
         "tags": ["hugo","static","site","debian","package","list"],
         "date" : "2021.02.28",
-        "body": "Random knowledge base access center.\nDebian List installed packages dpkg-query -l Hugo Create a new blog entry # Navigate to the \u0026#39;site\u0026#39; directory hugo new blog/heap-miscellanea.md Create a new release # Navigate to the \u0026#39;site\u0026#39; directory # Delete the \u0026#39;public\u0026#39; subdirectory hugo # Navigate up directory cd .. # Commit and push changes # If github and netlify have been set up so, # the new release should be published automatically Reading list Debian Wiki - List installed packages Hugo - Quick Start\n"
+        "body": "Random knowledge base access center.\nDebian List installed packages dpkg-query -l Hugo Create a new blog entry # Navigate to the \u0026#39;site\u0026#39; directory hugo new blog/heap-miscellanea.md Create a new release # Navigate to the \u0026#39;site\u0026#39; directory # Delete the \u0026#39;public\u0026#39; subdirectory hugo # Navigate up directory cd .. # Commit and push changes # If github and netlify have been set up so, # the new release should be published automatically Reading list Debian Wiki - List installed packages\nHugo - Quick Start\n"
     }
 ]
