@@ -6,7 +6,61 @@
     <description>Recent content in Tags on mitflit - Go fetch!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Feb 2021 21:02:53 +0200</lastBuildDate><atom:link href="https://mitflit.ro/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Feb 2021 11:29:08 +0200</lastBuildDate><atom:link href="https://mitflit.ro/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>debian</title>
+      <link>https://mitflit.ro/tags/debian/index.json</link>
+      <pubDate>Sun, 28 Feb 2021 11:29:08 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/debian/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://mitflit.ro/tags/hugo/index.json</link>
+      <pubDate>Sun, 28 Feb 2021 11:29:08 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/hugo/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>list</title>
+      <link>https://mitflit.ro/tags/list/index.json</link>
+      <pubDate>Sun, 28 Feb 2021 11:29:08 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/list/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>package</title>
+      <link>https://mitflit.ro/tags/package/index.json</link>
+      <pubDate>Sun, 28 Feb 2021 11:29:08 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/package/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>site</title>
+      <link>https://mitflit.ro/tags/site/index.json</link>
+      <pubDate>Sun, 28 Feb 2021 11:29:08 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/site/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static</title>
+      <link>https://mitflit.ro/tags/static/index.json</link>
+      <pubDate>Sun, 28 Feb 2021 11:29:08 +0200</pubDate>
+      
+      <guid>https://mitflit.ro/tags/static/index.json</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>horizontal</title>
       <link>https://mitflit.ro/tags/horizontal/index.json</link>
@@ -130,15 +184,6 @@
       <pubDate>Tue, 01 Dec 2020 12:49:52 +0200</pubDate>
       
       <guid>https://mitflit.ro/tags/vifm/index.json</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>debian</title>
-      <link>https://mitflit.ro/tags/debian/index.json</link>
-      <pubDate>Thu, 26 Nov 2020 17:45:42 +0200</pubDate>
-      
-      <guid>https://mitflit.ro/tags/debian/index.json</guid>
       <description></description>
     </item>
     

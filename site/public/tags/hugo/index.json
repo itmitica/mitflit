@@ -1,0 +1,10 @@
+[
+    {
+        "ref": "https://mitflit.ro/blog/heap-miscellanea/",
+        "title": "Heap Miscellanea",
+        "section": "blog",
+        "tags": ["hugo","static","site","debian","package","list"],
+        "date" : "2021.02.28",
+        "body": "Random knowledge base access center.\nDebian List installed packages dpkg-query -l Hugo Create new blog entry # Navigate to the \u0026#39;site\u0026#39; folder hugo new blog/heap-miscellanea.md Create new release # Navigate to the \u0026#39;site\u0026#39; folder # Delete the \u0026#39;public\u0026#39; subfolder hugo Reading list Debian Wiki - List installed packages Hugo - Quick Start\n"
+    }
+]
