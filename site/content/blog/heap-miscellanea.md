@@ -25,23 +25,29 @@ dpkg-query -l
 
 ## Hugo
 
-### Create new blog entry
+### Create a new blog entry
 
 ```mason
-# Navigate to the 'site' folder
+# Navigate to the 'site' directory
 hugo new blog/heap-miscellanea.md
 ```
 
-### Create new release
+### Create a new release
 ```mason
-# Navigate to the 'site' folder
-# Delete the 'public' subfolder
+# Navigate to the 'site' directory
+# Delete the 'public' subdirectory
 hugo
+
+# Navigate up directory
+cd ..
+
+# Commit and push changes
+# If github and netlify have been set up so,
+# the new release should be published automatically
 ```
 
 ## Reading list
 
 [Debian Wiki - List installed packages](https://wiki.debian.org/AptCLI#List_installed_packages)
-
 [Hugo - Quick Start](https://gohugo.io/getting-started/quick-start/)
 
